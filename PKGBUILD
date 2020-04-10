@@ -20,8 +20,8 @@ plain '       `-+shdNNNNNNNNNNNNNNNdhs+-`'
 plain '             `.-:///////:-.`'
 
 pkgname=amdgpu-pro-vulkan-only
-pkgver=19.50.1011208
-_pkgveramd=19.50-1011208
+pkgver=20.10.1028677
+_pkgveramd=20.10-1028677
 pkgrel=1
 arch=('x86_64')
 url='http://www.amd.com'
@@ -31,7 +31,7 @@ makedepends=('wget')
 DLAGENTS='https::/usr/bin/wget --referer https://www.amd.com/en/support/kb/release-notes/rn-amdgpu-unified-linux.aspx -N %u'
 
 source=(https://drivers.amd.com/drivers/linux/amdgpu-pro-${_pkgveramd}-ubuntu-18.04.tar.xz)
-sha256sums=('99a964a9151242f48cf5e40c157dc5147eabc156d8074f9fa2e8de3e81e554de')
+sha256sums=('ae2c4253bf11bea3dd01be79aeb250e4f44297ab8374e98a97716aa0809a9ed8')
 
 # extracts a debian package
 # $1: deb file to extract
