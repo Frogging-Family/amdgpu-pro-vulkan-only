@@ -20,8 +20,8 @@ plain '       `-+shdNNNNNNNNNNNNNNNdhs+-`'
 plain '             `.-:///////:-.`'
 
 pkgname=amdgpu-pro-vulkan-only
-pkgver=20.10.1048554
-_pkgveramd=20.10-1048554
+pkgver=20.20.1089974
+_pkgveramd=20.20-1089974
 pkgrel=1
 arch=('x86_64')
 url='http://www.amd.com'
@@ -30,8 +30,8 @@ makedepends=('wget')
 
 DLAGENTS='https::/usr/bin/wget --referer https://www.amd.com/en/support/kb/release-notes/rn-amdgpu-unified-linux.aspx -N %u'
 
-source=(https://drivers.amd.com/drivers/linux/amdgpu-pro-${_pkgveramd}-ubuntu-18.04.tar.xz)
-sha256sums=('7cbd666f9dd3e25a7bd8332a2693cabae2c9b05afe00d286ef7120f38d0335f4')
+source=(https://drivers.amd.com/drivers/linux/amdgpu-pro-${_pkgveramd}-ubuntu-20.04.tar.xz)
+sha256sums=('ff8de352d4dd8b0b4a7e62642028cc0a17384f3b9020621037ff2583fd694b4b')
 
 # extracts a debian package
 # $1: deb file to extract
@@ -48,8 +48,8 @@ package_amdgpu-pro-vulkan-only () {
 	pkgdesc="The AMDGPU Pro Vulkan driver, without everything else"
 	arch=('x86_64')
 
-	extract_deb "${srcdir}"/amdgpu-pro-${_pkgveramd}-ubuntu-18.04/./vulkan-amdgpu-pro_${_pkgveramd}_amd64.deb
-	extract_deb "${srcdir}"/amdgpu-pro-${_pkgveramd}-ubuntu-18.04/./vulkan-amdgpu-pro_${_pkgveramd}_i386.deb
+	extract_deb "${srcdir}"/amdgpu-pro-${_pkgveramd}-ubuntu-20.04/./vulkan-amdgpu-pro_${_pkgveramd}_amd64.deb
+	extract_deb "${srcdir}"/amdgpu-pro-${_pkgveramd}-ubuntu-20.04/./vulkan-amdgpu-pro_${_pkgveramd}_i386.deb
 
 	rm -rf "${pkgdir}"/etc
 
