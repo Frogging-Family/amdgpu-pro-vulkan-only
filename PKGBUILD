@@ -20,9 +20,9 @@ plain '       `-+shdNNNNNNNNNNNNNNNdhs+-`'
 plain '             `.-:///////:-.`'
 
 pkgname=amdgpu-pro-vulkan-only
-pkgver=22.20.1438747
-_amdver=22.20
-_pkgveramd=22.20-1438747~22.04
+pkgver=22.20.1447095
+_amdver=22.20.1
+_pkgveramd=22.20-1447095~22.04
 pkgrel=1
 arch=('x86_64')
 url='http://www.amd.com'
@@ -33,8 +33,8 @@ DLAGENTS='https::/usr/bin/wget --referer https://www.amd.com/en/support/kb/relea
 
 source=(https://repo.radeon.com/amdgpu/${_amdver}/ubuntu/pool/proprietary/v/vulkan-amdgpu-pro/vulkan-amdgpu-pro_${_pkgveramd}_amd64.deb
         https://repo.radeon.com/amdgpu/${_amdver}/ubuntu/pool/proprietary/v/vulkan-amdgpu-pro/vulkan-amdgpu-pro_${_pkgveramd}_i386.deb)
-sha256sums=('8030f2702805bf42192e34cb2d7beb647aec2afa2106e87229a047855d2429f7'
-            '04145f457bc6e1491bc63485041926afb5b2b2290493d9dda9c026ab0c89d713')
+sha256sums=('b88cedcda6ade1dde20317cf9d678bfdbc33cf97a9a7f42e261688eb90f9856c'
+            '3c4849ce2e5fa9c0c03d9d1093f47e45e170986a299574cf783237554a496de1')
 
 # extracts a debian package
 # $1: deb file to extract
